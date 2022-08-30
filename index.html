@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+ 
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-2" id="position">
+                <div class="white-box">
+                    <div class="img-box" id="img1" draggable="true" onmousedown="rmstuff()" ondrag="func1()" >
+                        <img src="img1.png">
+                    </div>
+                </div>
+                <div class="white-box">
+                    <div class="img-box" id="img2" draggable="true" onmousedown="rmstuff()" ondrag="func2()">
+                        <img src="img2.png">
+                    </div>
+                </div>
+                <div class="white-box"> 
+                    <div class="img-box" id="img3" draggable="true" onmousedown="rmstuff()" ondrag="func3()">
+                        <img src="img3.png">
+                    </div>
+                </div>
+                <div class="white-box">
+                    <div class="img-box" id="img4" draggable="true" onmousedown="rmstuff()" ondrag="func4()">
+                        <img src="img4.png">
+                    </div>
+                </div>
+                <div class="white-box" id="nonborder">
+                    <div class="img-box" id="">
+                        <button class="btn btn-info" type="submit" onclick="refresh()" id="clearer">Remove Cover</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-10">
+                <div class="white-box" id="cover-img"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>
